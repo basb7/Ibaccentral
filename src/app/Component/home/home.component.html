@@ -1,0 +1,140 @@
+<div class="container-fluid">
+	<section class="row">
+		<div class="col-12 portada d-flex justify-content-center">
+			<img src="assets/Images/backgroundHome2.jpg" alt="portada" class="img-fluid">
+			<h1 class="text-portada text-center">IGLESIA CRUZADA CRISTIANA BENDICION ABUNDANTE</h1>
+		</div>
+	</section>
+
+	<section class="row mt-5">
+		<div class="col-12">
+			<h1 class="text-center mb-3">A NEW CHURCH EXPERIENCE</h1>
+			<p class="text-center mb-5 fs-md-5">ICF is a non-denominational church built with the Bible as its foundation. <br> Authentic, relevant and excited about life with God.</p>
+		</div>
+	</section>
+	<section class="row">
+			<div class="col d-flex align-items-center justify-content-center justify-content-md-end">
+				<a routerLink="/ubicacion"><button class="btn btn-secondary me-md-2 px-5 mb-3 py-3 rounded-0">FIND CHURCH</button></a>
+			</div>
+			<div class="col d-flex align-items-center justify-content-center justify-content-md-start">
+				<button class="btn btn-secondary ms-md-2 px-5 mb-3 py-3 rounded-0">LIVESTREAM</button>
+			</div>
+	</section>
+
+	<section class="row" *ngIf="live === true; else elseLive">
+		<div class="col-12 mt-2 live d-flex align-items-center justify-content-center mt-5">
+			<a href="#" class="d-flex align-items-center link-live"><p class="mb-0 text-center text-primary"><button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CONTENIDO EN DIRECTO</button></p><img src="assets/Iconos/SocialMedia/logoLive.png" style="width: 4rem;"></a>
+		</div>
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content stream">
+				<div class="modal-header">
+				</div>
+				<div class="modal-body ratio ratio-16x9">
+					<iframe class="embed-responsive rounded " width="956" height="538" src="https://www.youtube.com/embed/live_stream?channel=UUzNhYB5KCG7zH_MlcUla0UA&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+				  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<ng-template #elseLive>
+	<section class="row">
+		<div class="col-12 mt-2 live d-flex align-items-center justify-content-center mt-5"	>
+			<a href="#"><button class="btn btn-danger px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">REVIVIR LA ULTIMA PREDICACION</button></a>
+		</div>
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content stream">
+				<div class="modal-header">
+				</div>
+				<div class="modal-body ratio ratio-16x9">
+					<iframe class="embed-responsive rounded " width="956" height="538" src="https://www.youtube.com/embed?listType=playlist&list=UUzNhYB5KCG7zH_MlcUla0UA&index=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+				  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>	
+	</ng-template>
+
+	<section class="row">
+		<div class="col-12 image-bg1 d-flex flex-column align-items-center justify-content-center my-5">
+			<div>
+				<h2 class="text-center text-white justify-content-center align-items-center fw-bold">MANTENTE CONECTADO</h2>
+			</div>
+			<div class="mt-2">
+				<a href="https://www.facebook.com/BendicionAbundanteCentral" target="_blank" class="me-3"><img src="assets/Iconos/SocialMedia/facebook.svg" style="width: 3rem"></a> 
+				<a href="https://www.instagram.com/bendicionabundante/" target="_blank "class="me-3"><img src="assets/Iconos/SocialMedia/instagram.svg" style="width: 3rem"></a>
+				<a href="https://www.youtube.com/channel/UCzNhYB5KCG7zH_MlcUla0UA" target="_blank"class="me-3"><img src="assets/Iconos/SocialMedia/youtube.svg" style="width: 3rem"></a>
+			</div>
+		</div>
+	</section>
+		
+	<section class="row rounded mx-1 mt-4 mb-5">
+		<div class="col-12 text-center mt-3 fw-normal my-5">
+			<p class="fst-italic py-0 mb-0">NUESTROS</p>
+			<p class="fw-bold fs-1">PASTORES</p>
+		</div>	
+		<div class="row border rounded mx-auto p-2 space-pastores">
+			<div class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center">
+				<img src="assets/Images/pastores.jpg" class="img-thumbnail w-75 rounded" alt="pastores">	
+			</div>
+			<div class="col-12 col-md-5 d-flex align-items-center offset-md-0">
+				<p class="fs-md-4 fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda vero animi alias quisquam delectus. Beatae quod ipsum illum nemo consectetur enim, dicta cumque eligendi tenetur, labore, repellendus iste quasi vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro commodi nesciunt, rem voluptate quisquam illo suscipit! Numquam consectetur recusandae obcaecati corporis, praesentium magni est, accusantium cupiditate quod vel ea dolorem!</p>
+			</div>
+		</div>
+		<div class="row mt-5 mx-auto">
+			<div class="col d-flex flex-column flex-md-row justify-content-md-evenly">
+				<button class="btn btn-secondary mb-2 px-5 py-3 rounded-0">MIGUEL ANGEL RODRIGUEZ</button>
+				<button class="btn btn-secondary mb-2 px-5 py-3 rounded-0">CINDY LORENA RUIZ</button>
+				<button class="btn btn-secondary mb-2 px-5 py-3 rounded-0">EQUIPO DE LIDERES</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="col image-bg2">
+
+		</div>
+	</section>
+
+	<section class="row mt-4 mx-1 mb-5 more-about rounded">
+		<div class="col-12 my-5">
+			<p class="fst-italic text-center mb-0">MÁS DE</p>
+			<p class="fs-1 text-center fw-bold"> NOSOTROS</p>
+		</div>
+		<div class="col-12 col-md-5 offset-md-1 d-flex align-items-center">
+			<p class="fs-md-5">Bendición Abundante es una iglesia que propende por el desarrollo de sus miembros y su movilización al ministerio.<br><br>
+			El desarrollo de cada miembro implica la sanidad espiritual, emocional y física; el crecimiento en el conocimiento de Dios y en los hábitos de un hombre o una mujer de Dios.</p>
+		</div>
+		<div class="col-12 col-md-4 offset-md-1">
+			<div class="ratio ratio-16x9">
+				<iframe src="https://www.youtube.com/embed/1DEYsbEXQiE" class="rounded" title="YouTube video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="col-12 text-center">
+			<p class="fs-2 fw-bold mb-5">EVENTOS</p>
+		</div>
+		<div class="col col-md-5 mb-3">
+			<div class="card">
+			  <img src="assets/Images/pdv.jpg" class="card-img-top" alt="Image-PDV">
+			  <div class="card-body">
+				<h5 class="card-title fw-bold text-center fs-5">PDV-DESARROLLA TU VIDA</h5>
+				<p class="card-text text-justify">Les invitamos a iniciar este año preparándose para SERVIR en IBAC CENTRAL, para esto el próximo 06 de Febrero a las 7:00 a.m. daremos inicio al primer ciclo PDV del 2022.</p>
+				<a class="d-flex justify-content-center" href="https://docs.google.com/forms/d/e/1FAIpQLSf8Fpjt31pRXWBzqqCO_xJJb5LbBxW-lhCgbyMsz4KEqBL93w/viewform?fbclid=IwAR1DLIMtqOPQ2U5JjQggA9zNbzzKDeL0fbnni_yjUonehwiZ6ESMYPwXzxE" target="_blank"><button class="btn btn-danger">Inscribirme</button></a>
+			  </div>
+			</div>
+		</div>
+
+	</section>
+
+</div>

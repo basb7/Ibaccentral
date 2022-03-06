@@ -1,0 +1,61 @@
+.portada {
+	width:  100vw;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	margin: 0 auto;
+}
+
+.text-portada {
+	z-index: 1;
+	position: absolute;
+	top: 38%;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: white;
+}
+
+.live {
+	height: 70px;
+}
+
+.image-bg1 {
+	background-image: url(/assets/Images/backgroundHome.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 20rem;
+}
+
+.image-bg2 {
+	background-image: url(/assets/Images/Background-login.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 20rem;
+}
+
+.link-live {
+	text-decoration: none;
+	color: white;
+}
+
+.more-about {
+	background: #E0F7FA;
+}
+
+.stream {
+	background: transparent;
+}
+
+.space-pastores {
+	background: #EEEEEE;
+}
+
+
+@media screen and (min-width: 769px) {
+	.text-portada {
+		font-size: 6vw;
+	}
+	
+}

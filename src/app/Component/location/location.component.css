@@ -1,0 +1,17 @@
+.image-bg1 {
+    background-image: url('/assets/Images/backgroundLocation.jpg');
+    width: 100vw;
+    height: 28rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.text-portada {
+    position: absolute;
+    line-height: 30rem;
+    font-size: 3rem;
+    opacity: 1;
+}
